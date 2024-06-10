@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BiodataActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        app:elevation="4dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:navigationIcon="@drawable/ic_back"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            android:background="@color/primarycolor" >
+
+            <TextView
+                android:id="@+id/tvToolbarWisata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="16dp"
+                android:text="Data Pemesan"
+                android:layout_gravity="center"/>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp"
+            android:paddingTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama Pemesan:"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="12dp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/nameLayout"
+                style="@style/LoginTextInputOuterFieldStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="@color/primarycolor"
+                app:hintTextColor="@color/primarycolor">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/nameEt"
+                    style="@style/LoginTextInputInnerFieldStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="12dp"
+                    android:hint="Masukkan nama"
+                    android:inputType="text"
+                    android:drawableTint="@color/primarycolor"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nomor Telepon :"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="12dp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/noLayout"
+                style="@style/LoginTextInputOuterFieldStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="@color/primarycolor"
+                app:hintTextColor="@color/primarycolor">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/noEt"
+                    style="@style/LoginTextInputInnerFieldStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="12dp"
+                    android:hint="Masukkan nomor telepon"
+                    android:inputType="phone"
+                    android:drawableTint="@color/primarycolor"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tanggal Pemesanan:"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="12dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/dateLayout"
+                style="@style/LoginTextInputOuterFieldStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="@color/primarycolor"
+                app:hintTextColor="@color/primarycolor">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tvSelectedDate"
+                    style="@style/LoginTextInputInnerFieldStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="12dp"
+                    android:hint="Masukkan tanggal"
+                    android:inputType="text"
+                    android:drawableTint="@color/primarycolor"
+                    android:drawableEnd="@drawable/ic_date"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alamat Penerima :"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="12dp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/locLayout"
+                style="@style/LoginTextInputOuterFieldStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="@color/primarycolor"
+                app:hintTextColor="@color/primarycolor">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/locationiEt"
+                    style="@style/LoginTextInputInnerFieldStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="12dp"
+                    android:hint="Masukkan alamat"
+                    android:inputType="text"
+                    android:drawableTint="@color/primarycolor"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bukti Pembayaran :"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="16dp"/>
+
+            <ImageView
+                android:id="@+id/imgView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_stroke" />
+
+            <Button
+                android:id="@+id/btnUploadPhoto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Unggah Foto"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:background="@drawable/btnprimary"
+                android:layout_marginTop="8dp"
+                android:drawableLeft="@drawable/ic_upload"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                style="@style/btnDisable"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="24dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

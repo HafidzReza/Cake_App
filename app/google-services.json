@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "573813582259",
+    "firebase_url": "https://kuecamilan-cd474-default-rtdb.firebaseio.com",
+    "project_id": "kuecamilan-cd474",
+    "storage_bucket": "kuecamilan-cd474.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:573813582259:android:026d63edaaa182a13243c6",
+        "android_client_info": {
+          "package_name": "com.example.cakeapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB448g6t930bS7P-uFHg890BqvGT0WY84M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:573813582259:android:0d77b68c0b212d833243c6",
+        "android_client_info": {
+          "package_name": "com.example.cakein"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB448g6t930bS7P-uFHg890BqvGT0WY84M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

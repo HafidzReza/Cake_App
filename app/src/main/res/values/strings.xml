@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Cake App</string>
+    <string name="Register">Tidak Punya Akun? <font color="#E5A559"><b>Register</b></font></string>
+    <string name="Login">Apakah anda sudah punya akun? <font color="#E5A559"><b>Login</b></font></string>
+</resources>

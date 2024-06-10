@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.CakeApp" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Customize your dark theme here. -->
+        <item name="colorPrimary">@color/primarycolor</item>
+        <item name="colorPrimaryVariant">@color/primarycolor</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/primarycolor</item>
+        <item name="colorSecondaryVariant">@color/primarycolor</item>
+        <item name="colorOnSecondary">@color/white</item>
+    </style>
+</resources>

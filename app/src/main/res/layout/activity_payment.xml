@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PaymentActivity"
+    android:padding="20dp">
+
+
+        <LinearLayout
+            android:id="@+id/lyBarcode"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Payment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_centerHorizontal="true"
+                android:text="Transaksi Pembayaran"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:src="@drawable/qris"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/img_2" />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*Screenshoot Bukti Pembayaran"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="16dp"/>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_above="@+id/butpayment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total harga :"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="12dp"/>
+
+        <TextView
+            android:id="@+id/tvTotalHargaSemuanya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="50000"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="16dp"/>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/butpayment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lanjut Isi Biodata"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:textSize="16dp"
+        android:background="@drawable/button_shape"
+        android:textAllCaps="false"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+</RelativeLayout>
+
+
+
